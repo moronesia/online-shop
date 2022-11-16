@@ -55,7 +55,6 @@ export default function PlaceOrderScreen() {
           paymentMethod: cart.paymentMethod,
           itemsPrice: cart.itemsPrice,
           shippingPrice: cart.shippingPrice,
-          taxPrice: cart.taxPrice,
           totalPrice: cart.totalPrice,
         },
         {
@@ -91,7 +90,7 @@ export default function PlaceOrderScreen() {
         <Col md={8}>
           <Card className="mb-3">
             <Card.Body>
-              <Card.Title>Shipping</Card.Title>
+              <Card.Title>Pengiriman</Card.Title>
               <Card.Text>
                 <strong>Nama:</strong> {cart.shippingAddress.fullName} <br />
                 <strong>Alamat: </strong> {cart.shippingAddress.address},
